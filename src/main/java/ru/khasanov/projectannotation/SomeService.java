@@ -3,10 +3,9 @@ package ru.khasanov.projectannotation;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SomeService implements BaseService {
+public class SomeService {
 
     @PerformanceAnalyze
-    @Override
     public void print(int a, String text) {
         for (int i = 0; i < a; i++) {
             System.out.println(text);

@@ -9,8 +9,7 @@ public class ProjectAnnotationApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(ProjectAnnotationApplication.class, args);
-        context.getBean(BaseService.class).print(5, "Hello World");
-
+        context.getBean(SomeService.class).print(5, "Hello World");
     }
 
 }
